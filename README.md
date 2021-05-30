@@ -23,11 +23,13 @@ sudo ./redOn
 sudo ./redOff
 
 --- Using without sudo ---
-#The tool setPermissions adds a group gpio and put you into this group.
-#Then it sets the owners and the rights for the led-interface-files.
+
+#The tool setPermissions adds a group gpio and put you into this group. Then it sets the owners and the rights for the led-interface-files.
+
 #Please start it not as root, because you must into this group and not root.
 
 ./setPermissions
 
 #Now you can use these tools without sudo.
-#But after restarting the os owners and rights are resetet to original.
+
+#But after restarting the os owners and rights are reseted to original.
