@@ -13,7 +13,11 @@ bool writeInFile(std::string file, bool value)
     of.close();
     return 1;
     }
-  else return 0;
+  else
+    {
+    std::cerr << "Can not open file " << file << " for writing. Do you have Permissions?" << std::cerr;
+    return 0;
+    }
   }
 
 #endif

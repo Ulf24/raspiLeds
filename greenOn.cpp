@@ -3,7 +3,7 @@
 int main()
   {
   #include "green.cpp"
-  writeInFile(GREEN, 1);
-  return 0;
+  if(writeInFile(GREEN, 1)) return 0;
+  else return -1;
   }
 
