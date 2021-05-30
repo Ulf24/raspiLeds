@@ -33,3 +33,6 @@ redOff: redOff.cpp writeInFile.cpp red.cpp
 clean:
 	rm greenOn greenOff redOn redOff green.cpp red.cpp
 
+groupGpio: makeGroupGpio.sh
+	sh makeGroupGpio.sh
+
