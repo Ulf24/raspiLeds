@@ -2,9 +2,15 @@
 #include <sstream>
 #include <cstdlib>
 
-int main()
+int main(int argc, char * argv[])
   {
-  system("sudo addgroup gpio; sudo adduser $(whoami) gpio");
+  bool withAddGroup = 1;
+  for(unsigned short counter = 1; counter < argc; counter ++)
+    {
+    std::string arg = argv[counter];
+    if(arg == "-f") withAddGroup = 0;
+    }
+  if(withAddGroup) system("sudo addgroup gpio; sudo adduser $(whoami) gpio");
   #include "green.cpp"
   #include "red.cpp"
   std::ostringstream os;

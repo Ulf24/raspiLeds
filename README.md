@@ -32,4 +32,6 @@ sudo ./redOff
 
 #Now you can use these tools without sudo.
 
-#But after restarting the os owners and rights are reseted to original.
+#But after restarting the os owners and rights are reseted to original. To set owners and rights new, you can use:
+
+./setPermissions -f
