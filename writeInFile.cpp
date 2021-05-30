@@ -1,6 +1,7 @@
 #ifndef WRITEINFILE_CPP
 #define WRITEINFILE_CPP
 
+#include <iostream>
 #include <string>
 #include <fstream>
 
@@ -15,7 +16,7 @@ bool writeInFile(std::string file, bool value)
     }
   else
     {
-    std::cerr << "Can not open file " << file << " for writing. Do you have Permissions?" << std::cerr;
+    std::cerr << "Can not open file " << file << " for writing. Do you have Permissions?" << std::endl;
     return 0;
     }
   }

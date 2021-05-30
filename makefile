@@ -3,3 +3,7 @@ all: greenOn.cpp greenOff.cpp writeInFile.cpp
 	sh findFileForGreen.sh && g++ -std=c++11 -o greenOn greenOn.cpp && g++ -std=c++11 -o greenOff greenOff.cpp
 	# ------------ Building programs for red led ----------------
 	sh findFileForRed.sh && g++ -std=c++11 -o redOn redOn.cpp && g++ -std=c++11 -o redOff redOff.cpp
+
+clean:
+	rm greenOn greenOff redOn redOff green.cpp red.cpp
+
