@@ -37,3 +37,8 @@ clean:
 setPermissions: setPermissions.cpp green.cpp red.cpp
 	g++ -o setPermissions setPermissions.cpp
 
+install:
+	cp greenOn greenOff redOn redOff /usr/local/bin/
+
+uninstall:
+	rm /usr/local/bin/greenOn /usr/local/bin/greenOff /usr/local/bin/redOn /usr/local/bin/redOff 
