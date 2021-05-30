@@ -1,6 +1,7 @@
 all:
 	make green
 	make red
+	make setPermissions
 
 green: findFileForGreen.sh greenOn.cpp greenOff.cpp writeInFile.cpp
 	make fileGreen
@@ -31,8 +32,8 @@ redOff: redOff.cpp writeInFile.cpp red.cpp
 	g++ -std=c++11 -o redOff redOff.cpp
 
 clean:
-	rm greenOn greenOff redOn redOff green.cpp red.cpp
+	rm greenOn greenOff redOn redOff green.cpp red.cpp setPermissions
 
-groupGpio: makeGroupGpio.sh
-	sh makeGroupGpio.sh
+setPermissions: setPermissions.cpp green.cpp red.cpp
+	g++ -o setPermissions setPermissions.cpp
 

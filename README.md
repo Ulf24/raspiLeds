@@ -12,4 +12,11 @@ cd raspiLeds/
 
 make
 
+--- Using ---
+
+sudo ./greenOn
+sudo ./greenOff
+
+sudo ./redOn
+sudo ./redOff
 

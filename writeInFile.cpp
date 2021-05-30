@@ -16,7 +16,7 @@ bool writeInFile(std::string file, bool value)
     }
   else
     {
-    std::cerr << "Can not open file " << file << " for writing. Do you have Permissions?" << std::endl;
+    std::cerr << "Can not open file " << file << " for writing. Do you have permissions?" << std::endl;
     return 0;
     }
   }
